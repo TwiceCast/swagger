@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- '6'
+- node
+- iojs
+matrix:
+  allow_failures:
+  - node
+  - iojs
+install:
+- npm install
+- npm update
+script:
+- npm run build
+cache:
+  directories:
+  - node_modules
+notifications:
+  email:
+    recipients:
+    - antoine.plaskowski@epitech.eu
+    on_success: change
+    on_failure: always
+  slack:
+    secure: yXIN4F/HmTS2G+b56azopBw8Ep8Y7K5iy7SnCnRhhmEhHNYAo5tjXEQDIKbhOFM8z2O9jLh2emfOh0mbNZGBTCZMxy0Ai8juqvCppA5aB2tvloXJW1ICsAvrXp/8bZLjsnND/AWclC9EBqYyWj/DpVWb+FOEnwcC/FEZZ+EOhqs7Oz3sVYvoXwIlepg/ZVopjZr28GoCAyMbbFVOr1YBlu6zkRQ24sq3XgLEIaReAVvluJdMoZ/WqOiaF63C2bG4y58IjMoIte6DgvKM4JwvCRoNAJSou6r8JnCciZIs0UQ2jbgrvaDVueXnCzgbVomknj0poqrddz2Mrk3mhGtyRPktSuiNlLhyHdm6fS4uK9S/GHZ78PlPrcO5IDWENT4EGU316ULMJhxQ+bgXvAbBZl2hbAiY03GXuT4b0K36dZ9wzf4Vgv15piThv44FdAuAF7q79ub9KSsjr60gxCbaFEMVgOPDwdUoklkLWNB/sW8tCoP3yOE+/pNG+zgLZ8dprob6nFFM5rnedWJ8CJ7B22FVSRwFlr1oAQkXh2ez4ntmH3kaXhWF1kYP4KkoA1xJl+hdtuOsh9wFjNrNbK0vPLjWtzLwEZ3GWz531y08EbR19P/W/7xBdZIKCsxcxpJTkEIoMWYnuo7p5j4/kM4f8KbzZWej/338skeyEkAx0lg=
