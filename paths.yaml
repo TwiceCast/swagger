@@ -7,6 +7,9 @@
       200:
        $ref: responses.yaml#/option
 
+/user:
+  $ref: paths/user.yaml
+
 /users:
   $ref: paths/users.yaml
 
@@ -60,6 +63,9 @@
 
 /streams/{streamId}/project:
   $ref: paths/streamsStreamIdProject.yaml
+
+/streams/{streamId}/tags:
+  $ref: paths/streamsStreamIdTags.yaml
 
 /organizations:
   $ref: paths/organizations.yaml

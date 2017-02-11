@@ -1,3 +1,10 @@
 properties:
-  error:
+  url:
+    type: string
+    format: url
+  method:
+    type: string
+  code:
+    type: integer
+  description:
     type: string

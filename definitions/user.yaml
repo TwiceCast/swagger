@@ -11,8 +11,6 @@ properties:
   birthdate:
     type: string
     format: date
-  rank:
-    $ref: ../definitions.yaml#/rank
   register_date:
     type: string
     format: date

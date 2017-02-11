@@ -1,10 +1,6 @@
 properties:
-  id:
-    type: integer
   code:
-    type: string
+    type: integer
     maxLength: 3
-    description: 3-length char country name representation
-  name:
-    type: string
-    description: Country name
+    minLength: 3
+    description: Numeric code ISO 3166

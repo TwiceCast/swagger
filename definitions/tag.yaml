@@ -1,11 +1,14 @@
 properties:
   id:
-    type: integer
-    format: int64
-  type:
-    type: integer
-    format: int32
-    description: Type of the category
+    type: string
   name:
     type: string
-    description: Name of the category
+  short_description:
+    type: string
+  full_description:
+    type: string
+  linked-tag:
+    type: array
+    items:
+      type: string
+      format: url
