@@ -14,88 +14,88 @@
   $ref: paths/users.yaml
 
 /users/{userId}:
-  $ref: paths/usersUserId.yaml
+  $ref: paths/users_id.yaml
 
 /users/{userId}/organizations:
-  $ref: paths/usersUserIdOrganizations.yaml
+  $ref: paths/users_id_organizations.yaml
 
 /users/{userId}/avatar:
-  $ref: paths/usersUserIdAvatar.yaml
+  $ref: paths/users_id_avatar.yaml
 
 /users/{userId}/friends:
-  $ref: paths/usersUserIdFriends.yaml
+  $ref: paths/users_id_friends.yaml
 
 /users/{userId}/blocks:
-  $ref: paths/usersUserIdBlocks.yaml
+  $ref: paths/users_id_blocks.yaml
 
 /users/{userId}/follows:
-  $ref: paths/usersUserIdFollows.yaml
+  $ref: paths/users_id_follows.yaml
 
 /users/{userId}/subscribes:
-  $ref: paths/usersUserIdSubscribes.yaml
+  $ref: paths/users_id_subscribes.yaml
 
 /streams:
   $ref: paths/streams.yaml
 
 /streams/{streamId}:
-  $ref: paths/streamsStreamId.yaml
+  $ref: paths/streams_id.yaml
 
 /streams/{streamId}/replays:
-  $ref: paths/streamsStreamIdReplays.yaml
+  $ref: paths/streams_id_replays.yaml
 
 /streams/{streamId}/blocks:
-  $ref: paths/streamsStreamIdBlocks.yaml
+  $ref: paths/streams_id_blocks.yaml
 
 /streams/{streamId}/followers:
-  $ref: paths/streamsStreamIdFollowers.yaml
+  $ref: paths/streams_id_followers.yaml
 
 /streams/{streamId}/subscribers:
-  $ref: paths/streamsStreamIdSubscribers.yaml
+  $ref: paths/streams_id_subscribers.yaml
 
 /streams/{streamId}/members:
-  $ref: paths/streamsStreamIdMembers.yaml
+  $ref: paths/streams_id_members.yaml
 
 /streams/{streamId}/chat:
-  $ref: paths/streamsStreamIdChat.yaml
+  $ref: paths/streams_id_chat.yaml
 
 /streams/{streamId}/event:
-  $ref: paths/streamsStreamIdEvent.yaml
+  $ref: paths/streams_id_event.yaml
 
 /streams/{streamId}/project:
-  $ref: paths/streamsStreamIdProject.yaml
+  $ref: paths/streams_id_project.yaml
 
 /streams/{streamId}/tags:
-  $ref: paths/streamsStreamIdTags.yaml
+  $ref: paths/streams_id_tags.yaml
 
 /organizations:
   $ref: paths/organizations.yaml
 
 /organizations/{organizationId}:
-  $ref: paths/organizationsOrganizationId.yaml
+  $ref: paths/organizations_id.yaml
 
 /organizations/{organizationId}/streams:
-  $ref: paths/organizationsOrganizationIdStreams.yaml
+  $ref: paths/organizations_id_streams.yaml
 
 /organizations/{organizationId}/members:
-  $ref: paths/organizationsOrganizationIdMembers.yaml
+  $ref: paths/organizations_id_members.yaml
 
 /replays:
   $ref: paths/replays.yaml
 
 /replays/{replayId}:
-  $ref: paths/replaysReplayId.yaml
+  $ref: paths/replays_id.yaml
 
 /replays/{replayId}/chat:
-  $ref: paths/replaysReplayIdChat.yaml
+  $ref: paths/replays_id_chat.yaml
 
 /replays/{replayId}/event:
-  $ref: paths/replaysReplayIdEvent.yaml
+  $ref: paths/replays_id_event.yaml
 
 /replays/{replayId}/project:
-  $ref: paths/replaysReplayIdProject.yaml
+  $ref: paths/replays_id_project.yaml
 
 /tags:
   $ref: paths/tags.yaml
 
 /tags/{tagId}:
-  $ref: paths/tagsTagId.yaml
+  $ref: paths/tags_id.yaml
