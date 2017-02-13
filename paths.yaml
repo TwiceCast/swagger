@@ -70,14 +70,14 @@
 /organizations:
   $ref: paths/organizations.yaml
 
-/organizations/{organizationId}:
-  $ref: paths/organizations_id.yaml
+/organization/{organizationId}:
+  $ref: paths/organization_id.yaml
 
-/organizations/{organizationId}/streams:
-  $ref: paths/organizations_id_streams.yaml
+/organization/{organizationId}/streams:
+  $ref: paths/organization_id_streams.yaml
 
-/organizations/{organizationId}/members:
-  $ref: paths/organizations_id_members.yaml
+/organization/{organizationId}/members:
+  $ref: paths/organization_id_members.yaml
 
 /replays:
   $ref: paths/replays.yaml
