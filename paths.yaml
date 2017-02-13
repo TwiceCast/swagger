@@ -37,35 +37,35 @@
 /streams:
   $ref: paths/streams.yaml
 
-/streams/{streamId}:
-  $ref: paths/streams_id.yaml
+/stream/{streamId}:
+  $ref: paths/stream_id.yaml
 
-/streams/{streamId}/replays:
-  $ref: paths/streams_id_replays.yaml
+/stream/{streamId}/replays:
+  $ref: paths/stream_id_replays.yaml
 
-/streams/{streamId}/blocks:
-  $ref: paths/streams_id_blocks.yaml
+/stream/{streamId}/blocks:
+  $ref: paths/stream_id_blocks.yaml
 
-/streams/{streamId}/followers:
-  $ref: paths/streams_id_followers.yaml
+/stream/{streamId}/followers:
+  $ref: paths/stream_id_followers.yaml
 
-/streams/{streamId}/subscribers:
-  $ref: paths/streams_id_subscribers.yaml
+/stream/{streamId}/subscribers:
+  $ref: paths/stream_id_subscribers.yaml
 
-/streams/{streamId}/members:
-  $ref: paths/streams_id_members.yaml
+/stream/{streamId}/members:
+  $ref: paths/stream_id_members.yaml
 
-/streams/{streamId}/chat:
-  $ref: paths/streams_id_chat.yaml
+/stream/{streamId}/chat:
+  $ref: paths/stream_id_chat.yaml
 
-/streams/{streamId}/event:
-  $ref: paths/streams_id_event.yaml
+/stream/{streamId}/event:
+  $ref: paths/stream_id_event.yaml
 
-/streams/{streamId}/project:
-  $ref: paths/streams_id_project.yaml
+/stream/{streamId}/project:
+  $ref: paths/stream_id_project.yaml
 
-/streams/{streamId}/tags:
-  $ref: paths/streams_id_tags.yaml
+/stream/{streamId}/tags:
+  $ref: paths/stream_id_tags.yaml
 
 /organizations:
   $ref: paths/organizations.yaml
