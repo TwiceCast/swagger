@@ -13,26 +13,26 @@
 /users:
   $ref: paths/users.yaml
 
-/users/{userId}:
-  $ref: paths/users_id.yaml
+/user/{userId}:
+  $ref: paths/user_id.yaml
 
-/users/{userId}/organizations:
-  $ref: paths/users_id_organizations.yaml
+/user/{userId}/organizations:
+  $ref: paths/user_id_organizations.yaml
 
-/users/{userId}/avatar:
-  $ref: paths/users_id_avatar.yaml
+/user/{userId}/avatar:
+  $ref: paths/user_id_avatar.yaml
 
-/users/{userId}/friends:
-  $ref: paths/users_id_friends.yaml
+/user/{userId}/friends:
+  $ref: paths/user_id_friends.yaml
 
-/users/{userId}/blocks:
-  $ref: paths/users_id_blocks.yaml
+/user/{userId}/blocks:
+  $ref: paths/user_id_blocks.yaml
 
-/users/{userId}/follows:
-  $ref: paths/users_id_follows.yaml
+/user/{userId}/follows:
+  $ref: paths/user_id_follows.yaml
 
-/users/{userId}/subscribes:
-  $ref: paths/users_id_subscribes.yaml
+/user/{userId}/subscribes:
+  $ref: paths/user_id_subscribes.yaml
 
 /streams:
   $ref: paths/streams.yaml
