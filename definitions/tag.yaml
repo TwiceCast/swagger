@@ -3,6 +3,9 @@ properties:
     type: string
   name:
     type: string
+  broadcasting:
+    type: integer
+    format: uint64
   short_description:
     type: string
   full_description:

@@ -1,6 +1,6 @@
 get:
   tags:
-    - Organization
+    - Stream
   description: Return all organization
   responses:
     200:

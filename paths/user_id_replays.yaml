@@ -1,6 +1,6 @@
 get:
   tags:
-    - Organization
+    - User
   description: Return all organization
   responses:
     200:
