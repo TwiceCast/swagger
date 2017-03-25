@@ -7,8 +7,14 @@ organization:
 user:
   $ref: definitions/user.yaml
 
+server:
+  $ref: definitions/server.yaml
+
 country:
   $ref: definitions/country.yaml
+
+language:
+  $ref: definitions/language.yaml
 
 rank:
   $ref: definitions/rank.yaml

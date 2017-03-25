@@ -1,9 +1,11 @@
 properties:
   id:
     type: string
-  title:
+    description: The unique id that represent an organization
+  name:
     type: string
-  lang:
-    type: string
+    description: The name of the organization
+  language:
+    $ref: ../definitions.yaml#/language
   private:
     type: boolean

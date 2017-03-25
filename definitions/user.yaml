@@ -3,6 +3,8 @@ properties:
     type: string
   name:
     type: string
+  language:
+    $ref: ../definitions.yaml#/language
   email:
     type: string
     format: email
