@@ -3,9 +3,14 @@ properties:
     type: string
   name:
     type: string
-  email:
+  ipv4:
     type: string
-    format: email
+  ipv6:
+    type: string
+  port:
+    type: integer
+  type:
+    type: integer
   register_date:
     type: string
     format: dateTime

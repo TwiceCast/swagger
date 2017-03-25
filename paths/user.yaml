@@ -13,16 +13,5 @@ get:
       description: not found
       schema:
         $ref: ../definitions.yaml#/error
-post:
-  tags:
-    - User
-  description: Create a user
-  responses:
-    200:
-      description: the new user create
-      schema:
-        $ref: ../definitions.yaml#/user
-  parameters:
-    - $ref: ../parameters.yaml#/user
 parameters:
   - $ref: ../parameters.yaml#/signature
