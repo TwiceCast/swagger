@@ -36,3 +36,6 @@ tagId:
 
 login:
   $ref: parameters/login.yaml
+
+jwt:
+  $ref: parameters/jwt.yaml
