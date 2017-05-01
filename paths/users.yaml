@@ -23,4 +23,16 @@ post:
       schema:
         $ref: ../definitions.yaml#/user
   parameters:
-    - $ref: ../parameters.yaml#/user
+    - name: user
+      in: body
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+          email:
+            type: string
+            format: email
+          password:
+            type: string
+            format: password
