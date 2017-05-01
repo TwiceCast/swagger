@@ -6,5 +6,4 @@ get:
     200:
       description: todo
 parameters:
-  - $ref: ../parameters.yaml#/signature
   - $ref: ../parameters.yaml#/replayId

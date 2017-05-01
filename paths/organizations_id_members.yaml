@@ -7,4 +7,3 @@ get:
       description: todo
 parameters:
   - $ref: ../parameters.yaml#/organizationId
-  - $ref: ../parameters.yaml#/signature

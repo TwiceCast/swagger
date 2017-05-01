@@ -24,3 +24,9 @@ error:
 
 tag:
   $ref: definitions/tag.yaml
+
+login:
+  $ref: definitions/login.yaml
+
+jwt:
+  $ref: definitions/jwt.yaml

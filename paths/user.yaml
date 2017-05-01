@@ -13,5 +13,3 @@ get:
       description: not found
       schema:
         $ref: ../definitions.yaml#/error
-parameters:
-  - $ref: ../parameters.yaml#/signature

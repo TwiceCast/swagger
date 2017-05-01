@@ -27,5 +27,3 @@ post:
         $ref: ../definitions.yaml#/tag
   parameters:
     - $ref: ../parameters.yaml#/tag
-parameters:
-  - $ref: ../parameters.yaml#/signature

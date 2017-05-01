@@ -10,6 +10,9 @@
 /user:
   $ref: paths/user.yaml
 
+/user/login:
+  $ref: paths/user_login.yaml
+
 /users:
   $ref: paths/users.yaml
 

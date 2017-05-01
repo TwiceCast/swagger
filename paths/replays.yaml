@@ -5,5 +5,3 @@ get:
   responses:
     200:
       description: todo
-parameters:
-  - $ref: ../parameters.yaml#/signature

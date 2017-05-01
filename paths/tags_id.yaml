@@ -28,4 +28,3 @@ delete:
       description: Done
 parameters:
   - $ref: ../parameters.yaml#/tagId
-  - $ref: ../parameters.yaml#/signature

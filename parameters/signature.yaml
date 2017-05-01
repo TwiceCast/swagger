@@ -1,5 +1,5 @@
-name: signature
-in: query
-description: signature
-type: string
+name: login
+in: body
 required: true
+schema:
+  $ref: ../definitions.yaml#/login

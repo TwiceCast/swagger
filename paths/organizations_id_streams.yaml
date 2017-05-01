@@ -18,4 +18,3 @@ post:
       $ref: ../responses.yaml#/stream
 parameters:
   - $ref: ../parameters.yaml#/organizationId
-  - $ref: ../parameters.yaml#/signature

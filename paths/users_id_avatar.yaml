@@ -15,4 +15,3 @@ put:
       description: todo
 parameters:
   - $ref: ../parameters.yaml#/userId
-  - $ref: ../parameters.yaml#/signature
