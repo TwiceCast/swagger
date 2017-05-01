@@ -11,16 +11,14 @@ info:
     name: MIT
     url: https://opensource.org/licenses/mit-license.php
 
-host: eip.epitech.eu
-basePath: /0.1.0
+host: 37.187.99.70
+
 schemes:
   - https
 produces:
   - application/json
-  - application/xml
 consumes:
   - application/json
-  - application/xml
 
 paths:
   $ref: paths.yaml
