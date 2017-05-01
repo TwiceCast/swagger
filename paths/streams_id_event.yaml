@@ -1,4 +1,6 @@
 get:
+  security:
+    - Bearer: []
   tags:
     - Stream
   description: todo

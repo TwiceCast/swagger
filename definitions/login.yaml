@@ -1,7 +1,7 @@
 properties:
-  name:
+  email:
     type: string
-    description: The name of the user.
+    description: The emails of the user.
   password:
     type: string
     description: The clear password of the user, he will be hash by the server (SHA256).
