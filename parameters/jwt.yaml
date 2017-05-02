@@ -1,4 +1,7 @@
 name: Authorization
+
 in: header
+
 type: string
-required: true
+
+required: false

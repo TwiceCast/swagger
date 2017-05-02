@@ -1,6 +1,7 @@
 properties:
-  jwt:
+  token:
     type: string
+
     description: >
       JSON Web Token (JWT) is an open standard (RFC 7519)
       that defines a compact and self-contained way for securely

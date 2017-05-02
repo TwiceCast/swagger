@@ -1,26 +1,39 @@
 get:
   tags:
     - Organization
+
   description: Return all organizations
+
   responses:
     200:
       description: A list of organizations.
+
       schema:
         type: array
+
         items:
           $ref: ../definitions.yaml#/organization
+
     404:
-      description: not found
+      description: Not found
+
       schema:
         $ref: ../definitions.yaml#/error
+
 post:
   tags:
     - Organization
+
   description: Create a organization
+
   responses:
     200:
-      description: the new organization created
+      description: The new organization created
+
       schema:
         $ref: ../definitions.yaml#/organization
+
   parameters:
     - $ref: ../parameters.yaml#/organization
+    
+    - $ref: ../parameters.yaml#/jwt

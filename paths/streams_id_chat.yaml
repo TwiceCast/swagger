@@ -1,9 +1,18 @@
 get:
   tags:
     - Stream
-  description: todo
+
+  description: >
+    This route provide the url of the server chat for this stream
+    and the token that prouve that you can access to this chat.
+
   responses:
     200:
       description: todo
+      schema:
+        $ref: ../definitions.yaml#/jwt
+
 parameters:
   - $ref: ../parameters.yaml#/streamId
+
+  - $ref: ../parameters.yaml#/jwt

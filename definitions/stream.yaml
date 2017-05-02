@@ -1,9 +1,12 @@
 properties:
   id:
     type: string
+
   title:
     type: string
+
   lang:
     type: string
+    
   private:
     type: boolean

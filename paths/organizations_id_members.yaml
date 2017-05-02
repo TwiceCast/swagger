@@ -1,24 +1,39 @@
 get:
   tags:
     - Organization
+
   description: This will provide you all members of the organization.
+
   responses:
     200:
       description: This is an array of all members of the organization.
+
       schema:
         type: array
+
         items:
           $ref: ../definitions.yaml#/user
+
 post:
   tags:
     - Organization
+
   description: You can add a member to the organization
+
   parameters:
     - $ref: ../parameters.yaml#/user
+
   responses:
-    200:
-      description: Member added
+    201:
+      description: Member added.
+
+      schema:
+        $ref: ../definitions.yaml#/user
+
+    404:
+      description: User or organization not found.
 
 parameters:
   - $ref: ../parameters.yaml#/organizationId
+  
   - $ref: ../parameters.yaml#/jwt

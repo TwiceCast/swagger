@@ -1,20 +1,39 @@
 get:
   tags:
     - Organization
+
   description: Return all stream
+
   responses:
     200:
       description: array of streams
+
       schema:
         type: array
+
         items:
           $ref: ../definitions.yaml#/stream
 post:
   tags:
     - Organization
+
   description: Create a stream
+
+  parameters:
+    - $ref: ../parameters.yaml#/stream
+
   responses:
-    200:
-      $ref: ../responses.yaml#/stream
+    201:
+      description: Stream created
+      schema:
+        $ref: ../definitions.yaml#/stream
+
+    401:
+      description: Unauthorized
+
+    404:
+      description: Organization not found
+
 parameters:
   - $ref: ../parameters.yaml#/organizationId
+  - $ref: ../parameters.yaml#/jwt

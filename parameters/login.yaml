@@ -1,5 +1,8 @@
 name: login
+
 in: body
+
 required: true
+
 schema:
   $ref: ../definitions.yaml#/login

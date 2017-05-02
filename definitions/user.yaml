@@ -1,16 +1,24 @@
 properties:
   id:
     type: string
+
   name:
     type: string
+
   language:
     $ref: ../definitions.yaml#/language
+
   email:
     type: string
+
     format: email
+
   register_date:
     type: string
+
     format: dateTime
+
   private:
     type: boolean
+
     description: If true the user is hidden

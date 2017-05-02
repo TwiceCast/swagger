@@ -1,5 +1,7 @@
 properties:
   code:
     type: string
+
     maxLength: 3
+    
     description: The language of the user, conform to ISO 639

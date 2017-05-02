@@ -1,6 +1,9 @@
 properties:
   code:
     type: integer
+
     maxLength: 3
+
     minLength: 3
+    
     description: Numeric code ISO 3166

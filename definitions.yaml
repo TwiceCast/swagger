@@ -30,3 +30,6 @@ login:
 
 jwt:
   $ref: definitions/jwt.yaml
+
+chat:
+  $ref: definitions/chat.yaml

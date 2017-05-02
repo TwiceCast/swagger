@@ -1,4 +1,7 @@
 name: streamId
+
 in: path
+
 required: true
+
 type: integer

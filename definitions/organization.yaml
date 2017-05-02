@@ -1,13 +1,20 @@
 properties:
   id:
     type: string
+
     description: The unique id that represent an organization
+
   name:
     type: string
+
     description: The name of the organization
+
   language:
     $ref: ../definitions.yaml#/language
+
     description: This is the natal language of the user
+
   private:
     type: boolean
+    
     description: If true the organization is hidden
