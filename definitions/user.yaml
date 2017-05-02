@@ -11,3 +11,6 @@ properties:
   register_date:
     type: string
     format: dateTime
+  private:
+    type: boolean
+    description: If true the user is hidden

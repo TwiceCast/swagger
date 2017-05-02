@@ -7,5 +7,7 @@ properties:
     description: The name of the organization
   language:
     $ref: ../definitions.yaml#/language
+    description: This is the natal language of the user
   private:
     type: boolean
+    description: If true the organization is hidden

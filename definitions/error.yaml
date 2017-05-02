@@ -2,9 +2,13 @@ properties:
   url:
     type: string
     format: url
+    description: The url of the request
   method:
     type: string
+    description: The verb http of the request
   code:
     type: integer
+    description: The error code
   description:
     type: string
+    description: Description of the error
