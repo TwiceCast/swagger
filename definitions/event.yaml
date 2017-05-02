@@ -4,7 +4,7 @@ properties:
 
     format: url
 
-    description: This is the url of the chat server.
+    description: This is the url of the event server.
 
   jwt:
     $ref: ../definitions.yaml#/jwt

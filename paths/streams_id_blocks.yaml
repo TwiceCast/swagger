@@ -1,9 +1,14 @@
 get:
   tags:
     - Stream
-  description: Get users right on the stream
+
+  description: Get the list of the users blocked in this stream, they can't access to the chat
+
   responses:
     200:
       description: todo
+
 parameters:
   - $ref: ../parameters.yaml#/streamId
+
+  - $ref: ../parameters.yaml#/jwt

@@ -33,3 +33,6 @@ jwt:
 
 chat:
   $ref: definitions/chat.yaml
+
+event:
+  $ref: definitions/event.yaml

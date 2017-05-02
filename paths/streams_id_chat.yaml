@@ -9,8 +9,12 @@ get:
   responses:
     200:
       description: todo
+
       schema:
-        $ref: ../definitions.yaml#/jwt
+        $ref: ../definitions.yaml#/chat
+
+    404:
+      description: Stream not found.
 
 parameters:
   - $ref: ../parameters.yaml#/streamId

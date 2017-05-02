@@ -1,10 +1,23 @@
 get:
   tags:
     - Stream
-  description: todo
+
+  description: >
+    This route provide the url of the server event for this stream
+    and the token that prouve that you can access to this chat. The event
+    server is here to provide information about who follow
+
   responses:
     200:
       description: todo
+
+      schema:
+        $ref: ../definitions.yaml#/event
+
+    404:
+      description: Stream not found.
+
 parameters:
   - $ref: ../parameters.yaml#/streamId
+
   - $ref: ../parameters.yaml#/jwt
