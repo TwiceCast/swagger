@@ -64,8 +64,8 @@
 /streams/{streamId}/event:
   $ref: paths/streams_id_event.yaml
 
-/streams/{streamId}/project:
-  $ref: paths/streams_id_project.yaml
+/streams/{streamId}/repository:
+  $ref: paths/streams_id_repository.yaml
 
 /streams/{streamId}/tags:
   $ref: paths/streams_id_tags.yaml
@@ -94,8 +94,8 @@
 /replays/{replayId}/event:
   $ref: paths/replays_id_event.yaml
 
-/replays/{replayId}/project:
-  $ref: paths/replays_id_project.yaml
+/replays/{replayId}/repository:
+  $ref: paths/replays_id_repository.yaml
 
 /tags:
   $ref: paths/tags.yaml

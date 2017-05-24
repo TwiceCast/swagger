@@ -7,3 +7,5 @@ get:
       description: todo
 parameters:
   - $ref: ../parameters.yaml#/streamId
+
+  - $ref: ../parameters.yaml#/jwt

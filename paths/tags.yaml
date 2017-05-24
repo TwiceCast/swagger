@@ -15,7 +15,7 @@ get:
         $ref: ../definitions.yaml#/error
   parameters:
     - $ref: ../parameters.yaml#/limit
-    - $ref: ../parameters.yaml#/page
+    - $ref: ../parameters.yaml#/start
 post:
   tags:
     - Tag

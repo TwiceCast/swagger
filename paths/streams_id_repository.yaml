@@ -3,22 +3,23 @@ get:
     - Stream
 
   description: >
-    This route provide the url of the server chat for this stream
-    and the token that prouve that you can access to this chat.
+    This route provide the url of the server repository for this stream
+    and the token that prouve that you can access to this repository. The repository
+    server is here to provide information about who follow
 
   responses:
     200:
       description: >
         This will contain the jwt that allow you to connect into the
-        chat address give by the API
-
-      schema:
-        $ref: ../definitions.yaml#/chat
+        repository server give by the API.
 
     401:
       description: >
         Some chat are private, if you try to access to a private chat you need
         to authentificate and have been access granted
+
+      schema:
+        $ref: ../definitions.yaml#/repository
 
     404:
       description: Stream not found.

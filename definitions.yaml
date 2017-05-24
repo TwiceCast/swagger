@@ -36,3 +36,6 @@ chat:
 
 event:
   $ref: definitions/event.yaml
+
+repository:
+  $ref: definitions/repository.yaml

@@ -1,0 +1,10 @@
+properties:
+  url:
+    type: string
+
+    format: url
+
+    description: This is the url of the repository server.
+
+  jwt:
+    $ref: ../definitions.yaml#/jwt

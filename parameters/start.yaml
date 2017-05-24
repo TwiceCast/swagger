@@ -1,9 +1,9 @@
-name: page
+name: start
 
 in: query
 
 description: Offset the results
 
-type: number
+type: integer
 
 required: false

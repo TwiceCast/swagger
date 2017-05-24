@@ -9,8 +9,15 @@ get:
 
   responses:
     200:
-      description: todo
+      description: >
+        This will contain the jwt that allow you to connect into the
+        event server give by the API.
 
+    401:
+      description: >
+        Some chat are private, if you try to access to a private chat you need
+        to authentificate and have been access granted
+        
       schema:
         $ref: ../definitions.yaml#/event
 

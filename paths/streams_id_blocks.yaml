@@ -2,7 +2,8 @@ get:
   tags:
     - Stream
 
-  description: Get the list of the users blocked in this stream, they can't access to the chat
+  description: >
+    Get the list of the users blocked in this stream, they can't access to the chat
 
   responses:
     200:
