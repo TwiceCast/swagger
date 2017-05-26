@@ -1,3 +1,6 @@
+avatar:
+  $ref: parameters/avatar.yaml
+
 userId:
   $ref: parameters/userId.yaml
 

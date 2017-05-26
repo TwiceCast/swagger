@@ -1,15 +1,21 @@
 post:
   tags:
     - User
+
   description: This route is used to generate the JWT (RFC 7519) to access to route that need it.
+
   responses:
     200:
       description: Your JWT (RFC 7519)
+
       schema:
           $ref: ../definitions.yaml#/jwt
+
     404:
       description: not found
+      
       schema:
         $ref: ../definitions.yaml#/error
+
 parameters:
   - $ref: ../parameters.yaml#/login

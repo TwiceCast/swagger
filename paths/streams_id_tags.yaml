@@ -1,9 +1,27 @@
 get:
   tags:
     - Stream
+
   description: Get all tags on the stream
+
+  parameters:
+    - $ref: ../parameters.yaml#/start
+
+    - $ref: ../parameters.yaml#/limit
+
   responses:
     200:
-      description: todo
+      description: >
+        This will contain the tags of a stream, this result will be split.
+        You need to call this route by increment start until you get a 204.
+
+    204:
+      description: This will be send if there are no other data.
+
+    404:
+      description: Stream not found.
+
 parameters:
   - $ref: ../parameters.yaml#/streamId
+
+  - $ref: ../parameters.yaml#/jwt

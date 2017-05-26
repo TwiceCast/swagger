@@ -1,17 +1,45 @@
 get:
   tags:
     - User
+
+  produces:
+    - image/png
+
   description: Return avatar
+
   responses:
     200:
       description: todo
+      schema:
+        type: file
 
 put:
   tags:
     - User
-  description: replace avatar
+
+  consumes:
+    - multipart/form-data
+
+  description: Replace avatar
+
+  parameters:
+    - $ref: ../parameters.yaml#/avatar
+
   responses:
-    200:
-      description: todo
+    204:
+      description: The avatar has been replaced.
+
+    400:
+      description: You image is not acceptable, you can find why in the body response.
+
+    402:
+      description: When your jwt is not valid or you didn't give it. Detail in the body response.
+
+    403:
+      description: You don't have the right to modify this avatar.
+
+    404:
+      description: The user has not been found.
+
 parameters:
   - $ref: ../parameters.yaml#/userId

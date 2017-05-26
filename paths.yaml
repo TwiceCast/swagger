@@ -2,13 +2,12 @@
   options:
     tags:
       - Options
+
     description: Return description of API
+
     responses:
       200:
        $ref: responses.yaml#/option
-
-/user:
-  $ref: paths/user.yaml
 
 /user/login:
   $ref: paths/user_login.yaml
