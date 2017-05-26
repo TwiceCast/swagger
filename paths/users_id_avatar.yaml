@@ -10,6 +10,7 @@ get:
   responses:
     200:
       description: todo
+
       schema:
         type: file
 

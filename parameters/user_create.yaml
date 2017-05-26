@@ -1,0 +1,8 @@
+name: user
+
+in: body
+
+required: true
+
+schema:
+  $ref: ../definitions.yaml#/user_create

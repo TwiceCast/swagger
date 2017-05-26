@@ -16,6 +16,9 @@ organizationId:
 user:
   $ref: parameters/user.yaml
 
+user_create:
+  $ref: parameters/user_create.yaml
+
 stream:
   $ref: parameters/stream.yaml
 
