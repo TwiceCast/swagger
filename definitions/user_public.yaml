@@ -2,5 +2,9 @@ properties:
   id:
     type: string
 
+    description: This id is used in every request about this user.
+
   name:
     type: string
+
+    description: The public name of the user.

@@ -2,8 +2,12 @@ properties:
   id:
     type: string
 
+    description: This id is used in every request about this user.
+
   name:
     type: string
+
+    description: The public name of the user.
 
   language:
     $ref: ../definitions.yaml#/language
@@ -13,12 +17,29 @@ properties:
 
     format: email
 
+    description: The API use the email as login.
+
   register_date:
     type: string
 
     format: dateTime
 
+    description: This will be the date in UTC when the account has been create.
+
   private:
     type: boolean
 
-    description: If true the user is hidden
+    description: You can choose to not be public.
+
+example:
+  id: 42
+
+  name: TwiceCast
+
+  language: FRA
+
+  email: twicecast@twicecast.ovh
+
+  register_date: 2015-12-24T23:59:59.59Z
+
+  private: false
