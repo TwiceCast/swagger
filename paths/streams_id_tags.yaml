@@ -11,15 +11,10 @@ get:
 
   responses:
     200:
-      description: >
-        This will contain the tags of a stream, this result will be split.
-        You need to call this route by increment start until you get a 204.
-
-    204:
-      description: This will be send if there are no other data.
+      $ref: ../responses.yaml#/tag_list
 
     404:
-      description: Stream not found.
+      $ref: ../responses.yaml#/not_found
 
 parameters:
   - $ref: ../parameters.yaml#/stream_id

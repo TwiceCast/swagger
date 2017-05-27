@@ -15,71 +15,80 @@
 /users:
   $ref: paths/users.yaml
 
-/users/{userId}:
+/users/{user_id}:
   $ref: paths/users_id.yaml
 
-/users/{userId}/organizations:
+/users/{user_id}/organizations:
   $ref: paths/users_id_organizations.yaml
 
-/users/{userId}/avatar:
+/users/{user_id}/avatar:
   $ref: paths/users_id_avatar.yaml
 
-/users/{userId}/friends:
+/users/{user_id}/friends:
   $ref: paths/users_id_friends.yaml
 
-/users/{userId}/blocks:
+/users/{user_id}/friends/{friend_id}:
+  $ref: paths/users_id_friends_id.yaml
+
+/users/{user_id}/blocks:
   $ref: paths/users_id_blocks.yaml
 
-/users/{userId}/follows:
+/users/{user_id}/blocks/{block_id}:
+  $ref: paths/users_id_blocks_id.yaml
+
+/users/{user_id}/follows:
   $ref: paths/users_id_follows.yaml
 
-/users/{userId}/subscribes:
+/users/{user_id}/subscribes:
   $ref: paths/users_id_subscribes.yaml
+
+/users/{user_id}/subscribes/{subscribe_id}:
+  $ref: paths/users_id_subscribes_id.yaml
 
 /streams:
   $ref: paths/streams.yaml
 
-/streams/{streamId}:
+/streams/{stream_id}:
   $ref: paths/streams_id.yaml
 
-/streams/{streamId}/blocks:
+/streams/{stream_id}/blocks:
   $ref: paths/streams_id_blocks.yaml
 
-/streams/{streamId}/followers:
+/streams/{stream_id}/followers:
   $ref: paths/streams_id_followers.yaml
 
-/streams/{streamId}/subscribers:
+/streams/{stream_id}/subscribers:
   $ref: paths/streams_id_subscribers.yaml
 
-/streams/{streamId}/members:
+/streams/{stream_id}/members:
   $ref: paths/streams_id_members.yaml
 
-/streams/{streamId}/chat:
+/streams/{stream_id}/chat:
   $ref: paths/streams_id_chat.yaml
 
-/streams/{streamId}/event:
+/streams/{stream_id}/event:
   $ref: paths/streams_id_event.yaml
 
-/streams/{streamId}/repository:
+/streams/{stream_id}/repository:
   $ref: paths/streams_id_repository.yaml
 
-/streams/{streamId}/tags:
+/streams/{stream_id}/tags:
   $ref: paths/streams_id_tags.yaml
 
 /organizations:
   $ref: paths/organizations.yaml
 
-/organizations/{organizationId}:
+/organizations/{organization_id}:
   $ref: paths/organizations_id.yaml
 
-/organizations/{organizationId}/streams:
+/organizations/{organization_id}/streams:
   $ref: paths/organizations_id_streams.yaml
 
-/organizations/{organizationId}/members:
+/organizations/{organization_id}/members:
   $ref: paths/organizations_id_members.yaml
 
 /tags:
   $ref: paths/tags.yaml
 
-/tags/{tagId}:
+/tags/{tag_id}:
   $ref: paths/tags_id.yaml

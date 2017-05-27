@@ -1,6 +1,7 @@
 get:
   tags:
     - User
+    - Block
 
   description: This give you the list of all your blocked user.
 
@@ -13,9 +14,6 @@ get:
     200:
       $ref: ../responses.yaml#/user_list
 
-    204:
-      description: This will be send if there are no other data.
-
     400:
       $ref: ../responses.yaml#/bad_request
 
@@ -26,7 +24,7 @@ get:
       $ref: ../responses.yaml#/forbidden
 
     404:
-      $ref: ../responses.yaml#/user_not_found
+      $ref: ../responses.yaml#/not_found
 
 parameters:
   - $ref: ../parameters.yaml#/user_id

@@ -7,6 +7,15 @@ register:
 user_id:
   $ref: parameters/user_id.yaml
 
+block_id:
+  $ref: parameters/block_id.yaml
+
+friend_id:
+  $ref: parameters/friend_id.yaml
+
+subscribe_id:
+  $ref: parameters/subscribe_id.yaml
+
 avatar:
   $ref: parameters/avatar.yaml
 

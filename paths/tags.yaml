@@ -13,6 +13,9 @@ get:
     200:
       $ref: ../responses.yaml#/tag_list
 
+    400:
+      $ref: ../responses.yaml#/bad_request
+
     404:
       $ref: ../responses.yaml#/not_found
 
@@ -26,8 +29,17 @@ post:
     - $ref: ../parameters.yaml#/tag
 
   responses:
-    200:
+    201:
       $ref: ../responses.yaml#/tag
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
 
 parameters:
   - $ref: ../parameters.yaml#/jwt

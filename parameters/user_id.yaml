@@ -1,4 +1,4 @@
-name: userId
+name: user_id
 
 in: path
 

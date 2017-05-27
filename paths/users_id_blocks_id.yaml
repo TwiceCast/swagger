@@ -1,43 +1,13 @@
-get:
-  tags:
-    - User
-
-  produces:
-    - image/png
-
-  description: Return avatar
-
-  responses:
-    200:
-      $ref: ../responses.yaml#/avatar
-
-    400:
-      $ref: ../responses.yaml#/bad_request
-
-    401:
-      $ref: ../responses.yaml#/unauthorized
-
-    403:
-      $ref: ../responses.yaml#/forbidden
-
-    404:
-      $ref: ../responses.yaml#/user_not_found
-
 put:
   tags:
     - User
+    - block
 
-  consumes:
-    - multipart/form-data
-
-  description: Replace avatar
-
-  parameters:
-    - $ref: ../parameters.yaml#/avatar
+  description: Create a block
 
   responses:
-    204:
-      description: The avatar has been replaced.
+    201:
+      $ref: ../responses.yaml#/user
 
     400:
       $ref: ../responses.yaml#/bad_request
@@ -51,10 +21,32 @@ put:
     404:
       $ref: ../responses.yaml#/user_not_found
 
-    415:
-      description: We only support png.
+delete:
+  tags:
+    - User
+    - block
+
+  description: Delete a block
+
+  responses:
+    204:
+      description: This block has been remove successfully.
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
+    404:
+      $ref: ../responses.yaml#/not_found
 
 parameters:
   - $ref: ../parameters.yaml#/user_id
+
+  - $ref: ../parameters.yaml#/block_id
 
   - $ref: ../parameters.yaml#/jwt

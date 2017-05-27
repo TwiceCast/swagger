@@ -1,4 +1,4 @@
-name: organizationId
+name: organization_id
 
 in: path
 

@@ -8,6 +8,12 @@ get:
     200:
       $ref: ../responses.yaml#/user
 
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
     404:
       $ref: ../responses.yaml#/user_not_found
 
@@ -27,6 +33,12 @@ put:
     400:
       $ref: ../responses.yaml#/bad_request
 
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
     404:
       $ref: ../responses.yaml#/user_not_found
 
@@ -45,6 +57,12 @@ patch:
 
     400:
       $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
 
     404:
       $ref: ../responses.yaml#/user_not_found

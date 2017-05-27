@@ -35,8 +35,8 @@ delete:
   description: Delete a tag
 
   responses:
-    200:
-      description: Done
+    204:
+      description: The tag has been deleted.
 
 parameters:
   - $ref: ../parameters.yaml#/tag_id

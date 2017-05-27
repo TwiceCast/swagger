@@ -48,3 +48,6 @@ forbidden:
 
 not_found:
   $ref: responses/not_found.yaml
+
+unsupported_media_type:
+  $ref: responses/unsupported_media_type.yaml
