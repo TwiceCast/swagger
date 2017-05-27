@@ -1,8 +1,18 @@
 description: >
   This will contain your streams, this result will be split.
-  You need to call this route by increment start until you get a 204.
+  You must recall this route by incrementing start of x times limit.
+  x is the number of page that you want. If you ask for a out of range value,
+  you will have a 404 error.
 
 schema:
-  type: array
-  
-  $ref: ../definitions.yaml#/stream
+  type: object
+
+  properties:
+    stream_list:
+      type: array
+
+      items:
+        $ref: ../definitions.yaml#/stream
+
+    stream_total:
+      type: integer

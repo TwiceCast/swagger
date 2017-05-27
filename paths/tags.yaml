@@ -11,19 +11,10 @@ get:
 
   responses:
     200:
-      description: A list of categories
-
-      schema:
-        type: array
-
-        items:
-          $ref: ../definitions.yaml#/tag
+      $ref: ../responses.yaml#/tag_list
 
     404:
-      description: Not found
-
-      schema:
-        $ref: ../definitions.yaml#/error
+      $ref: ../responses.yaml#/not_found
 
 post:
   tags:
@@ -31,12 +22,12 @@ post:
 
   description: Create a tag
 
-  responses:
-    200:
-      description: The new tag created
-
-      schema:
-        $ref: ../definitions.yaml#/tag
-
   parameters:
     - $ref: ../parameters.yaml#/tag
+
+  responses:
+    200:
+      $ref: ../responses.yaml#/tag
+
+parameters:
+  - $ref: ../parameters.yaml#/jwt

@@ -1,0 +1,4 @@
+description: This tag id doesn't exist, detail in the body.
+
+schema:
+  $ref: ../definitions.yaml#/error

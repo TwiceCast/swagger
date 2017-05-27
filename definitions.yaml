@@ -7,9 +7,6 @@ organization:
 user:
   $ref: definitions/user.yaml
 
-user_create:
-  $ref: definitions/user_create.yaml
-
 
 server:
   $ref: definitions/server.yaml
@@ -29,11 +26,16 @@ error:
 tag:
   $ref: definitions/tag.yaml
 
+
+register:
+  $ref: definitions/register.yaml
+
 login:
   $ref: definitions/login.yaml
 
 jwt:
   $ref: definitions/jwt.yaml
+
 
 chat:
   $ref: definitions/chat.yaml

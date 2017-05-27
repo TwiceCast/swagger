@@ -52,3 +52,5 @@ put:
 
 parameters:
   - $ref: ../parameters.yaml#/user_id
+
+  - $ref: ../parameters.yaml#/jwt

@@ -1,8 +1,18 @@
 description: >
-  This will contain your organisations, this result will be split.
-  You need to call this route by increment start until you get a 204.
+  This will contain your organizations, this result will be split.
+  You must recall this route by incrementing start of x times limit.
+  x is the number of page that you want. If you ask for a out of range value,
+  you will have a 404 error.
 
 schema:
-  type: array
-  
-  $ref: ../definitions.yaml#/organization
+  type: object
+
+  properties:
+    organization_list:
+      type: array
+
+      items:
+        $ref: ../definitions.yaml#/organization
+
+    organization_total:
+      type: integer

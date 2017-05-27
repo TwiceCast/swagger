@@ -15,9 +15,8 @@ get:
     200:
       $ref: ../responses.yaml#/user_list
 
-    204:
-      description: This will be send if there are no other data.
-
+    404:
+      $ref: ../responses.yaml#/not_found
 
 post:
   tags:
@@ -30,4 +29,7 @@ post:
       $ref: ../responses.yaml#/user
 
   parameters:
-    - $ref: ../parameters.yaml#/user_create
+    - $ref: ../parameters.yaml#/register
+
+parameters:
+  - $ref: ../parameters.yaml#/jwt

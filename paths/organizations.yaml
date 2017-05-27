@@ -6,19 +6,10 @@ get:
 
   responses:
     200:
-      description: A list of organizations.
-
-      schema:
-        type: array
-
-        items:
-          $ref: ../definitions.yaml#/organization
+      $ref: ../responses.yaml#/organization_list
 
     404:
-      description: Not found
-
-      schema:
-        $ref: ../definitions.yaml#/error
+      $ref: ../responses.yaml#/not_found
 
 post:
   tags:
@@ -35,3 +26,6 @@ post:
 
   parameters:
     - $ref: ../parameters.yaml#/organization
+
+parameters:
+  - $ref: ../parameters.yaml#/jwt

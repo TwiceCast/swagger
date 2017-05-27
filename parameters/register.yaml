@@ -5,4 +5,4 @@ in: body
 required: true
 
 schema:
-  $ref: ../definitions.yaml#/user_create
+  $ref: ../definitions.yaml#/register

@@ -16,6 +16,9 @@ user_not_found:
 stream_list:
   $ref: responses/stream_list.yaml
 
+stream_not_found:
+  $ref: responses/stream_not_found.yaml
+
 organization:
   $ref: responses/organization.yaml
 
@@ -28,11 +31,20 @@ option:
 tag:
   $ref: responses/tag.yaml
 
+tag_list:
+  $ref: responses/tag_list.yaml
+
+tag_not_found:
+  $ref: responses/tag_not_found.yaml
+
 bad_request:
   $ref: responses/bad_request.yaml
+
+unauthorized:
+  $ref: responses/unauthorized.yaml
 
 forbidden:
   $ref: responses/forbidden.yaml
 
-unauthorized:
-  $ref: responses/unauthorized.yaml
+not_found:
+  $ref: responses/not_found.yaml

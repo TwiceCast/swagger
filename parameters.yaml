@@ -1,8 +1,8 @@
 user:
   $ref: parameters/user.yaml
 
-user_create:
-  $ref: parameters/user_create.yaml
+register:
+  $ref: parameters/register.yaml
 
 user_id:
   $ref: parameters/user_id.yaml

@@ -1,5 +1,5 @@
 description: >
-  This will contain your users, this result will be split.
+  This will contain your tags, this result will be split.
   You must recall this route by incrementing start of x times limit.
   x is the number of page that you want. If you ask for a out of range value,
   you will have a 404 error.
@@ -8,11 +8,11 @@ schema:
   type: object
 
   properties:
-    user_list:
+    tag_list:
       type: array
 
       items:
-        $ref: ../definitions.yaml#/user
+        $ref: ../definitions.yaml#/tag
 
-    user_total:
+    tag_total:
       type: integer
