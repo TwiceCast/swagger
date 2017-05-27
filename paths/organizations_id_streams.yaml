@@ -13,6 +13,7 @@ get:
 
         items:
           $ref: ../definitions.yaml#/stream
+          
 post:
   tags:
     - Organization
@@ -25,6 +26,7 @@ post:
   responses:
     201:
       description: Stream created
+
       schema:
         $ref: ../definitions.yaml#/stream
 
@@ -36,4 +38,5 @@ post:
 
 parameters:
   - $ref: ../parameters.yaml#/organizationId
+
   - $ref: ../parameters.yaml#/jwt

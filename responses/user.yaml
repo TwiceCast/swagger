@@ -1,3 +1,4 @@
-description: The user
+description: An User.
+
 schema:
   $ref: ../definitions.yaml#/user

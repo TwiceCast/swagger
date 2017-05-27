@@ -9,6 +9,8 @@ get:
 
     - $ref: ../parameters.yaml#/limit
 
+    - $ref: ../parameters.yaml#/jwt
+    
   responses:
     200:
       description: >
@@ -23,6 +25,7 @@ get:
 
     204:
       description: This will be send if there are no other data.
+
 
 post:
   tags:

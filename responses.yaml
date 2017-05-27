@@ -4,11 +4,26 @@ stream:
 user:
   $ref: responses/user.yaml
 
+user_not_found:
+  $ref: responses/user_not_found.yaml
+
 organization:
   $ref: responses/organization.yaml
+
+stream_list:
+  $ref: responses/stream_list.yaml
 
 option:
   $ref: responses/option.yaml
 
 tag:
   $ref: responses/tag.yaml
+
+bad_request:
+  $ref: responses/bad_request.yaml
+
+forbidden:
+  $ref: responses/forbidden.yaml
+
+unauthorized:
+  $ref: responses/unauthorized.yaml

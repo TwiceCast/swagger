@@ -1,0 +1,4 @@
+description: The jwt is needed or has no been provided. Detail in the body.
+
+schema:
+  $ref: ../definitions.yaml#/error

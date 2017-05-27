@@ -1,9 +1,34 @@
 get:
   tags:
     - User
+
   description: todo
+
+  parameters:
+    - $ref: ../parameters.yaml#/start
+
+    - $ref: ../parameters.yaml#/limit
+
   responses:
     200:
-      description: todo
+      $ref: ../responses.yaml#/stream_list
+
+    204:
+      description: This will be send if there are no other data.
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 parameters:
   - $ref: ../parameters.yaml#/userId
+
+  - $ref: ../parameters.yaml#/jwt

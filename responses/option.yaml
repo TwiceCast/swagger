@@ -1,5 +1,7 @@
-description: return allow header
+description: Return allow header.
+
 headers:
   Allow:
-    description: list of method handle by /
+    description: List of method handle by /
+
     type: string

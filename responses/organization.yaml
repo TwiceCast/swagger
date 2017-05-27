@@ -1,3 +1,4 @@
-description: The organization
+description: An organization.
+
 schema:
   $ref: ../definitions.yaml#/organization

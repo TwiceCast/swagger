@@ -1,3 +1,4 @@
-description: the stream
+description: A stream.
+
 schema:
   $ref: ../definitions.yaml#/stream

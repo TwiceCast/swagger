@@ -17,3 +17,6 @@ properties:
     format: password
 
     description: The password will be hash by the server.
+
+  language:
+    $ref: ../definitions.yaml#/language

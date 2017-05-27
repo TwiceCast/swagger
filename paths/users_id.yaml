@@ -1,31 +1,77 @@
 get:
   tags:
     - User
+
   description: Return one user
+
   responses:
     200:
       $ref: ../responses.yaml#/user
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 put:
   tags:
     - User
+
   description: replace one user
+
+  parameters:
+    - $ref: ../parameters.yaml#/user_create
+
   responses:
     200:
       $ref: ../responses.yaml#/user
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 patch:
   tags:
     - User
-  description: patch one user
+
+  description: replace one user
+
+  parameters:
+    - $ref: ../parameters.yaml#/user_create
+
   responses:
     200:
       $ref: ../responses.yaml#/user
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 delete:
   tags:
     - User
+
   description: delete a user
+
   responses:
-    200:
-      description: done
+    204:
+      description: The user has been remove successfully.
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 parameters:
   - $ref: ../parameters.yaml#/userId
+
   - $ref: ../parameters.yaml#/jwt
