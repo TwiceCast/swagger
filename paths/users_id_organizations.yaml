@@ -29,6 +29,6 @@ get:
       $ref: ../responses.yaml#/user_not_found
 
 parameters:
-  - $ref: ../parameters.yaml#/userId
+  - $ref: ../parameters.yaml#/user_id
 
   - $ref: ../parameters.yaml#/jwt

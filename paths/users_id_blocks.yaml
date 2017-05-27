@@ -6,4 +6,4 @@ get:
     200:
       description: todo
 parameters:
-  - $ref: ../parameters.yaml#/userId
+  - $ref: ../parameters.yaml#/user_id

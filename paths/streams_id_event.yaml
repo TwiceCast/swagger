@@ -17,7 +17,7 @@ get:
       description: >
         Some chat are private, if you try to access to a private chat you need
         to authentificate and have been access granted
-        
+
       schema:
         $ref: ../definitions.yaml#/event
 
@@ -25,6 +25,6 @@ get:
       description: Stream not found.
 
 parameters:
-  - $ref: ../parameters.yaml#/streamId
+  - $ref: ../parameters.yaml#/stream_id
 
   - $ref: ../parameters.yaml#/jwt

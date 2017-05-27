@@ -42,9 +42,6 @@
 /streams/{streamId}:
   $ref: paths/streams_id.yaml
 
-/streams/{streamId}/replays:
-  $ref: paths/streams_id_replays.yaml
-
 /streams/{streamId}/blocks:
   $ref: paths/streams_id_blocks.yaml
 

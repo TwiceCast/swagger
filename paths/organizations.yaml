@@ -35,5 +35,3 @@ post:
 
   parameters:
     - $ref: ../parameters.yaml#/organization
-    
-    - $ref: ../parameters.yaml#/jwt

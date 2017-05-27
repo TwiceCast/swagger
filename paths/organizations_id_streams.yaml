@@ -13,7 +13,7 @@ get:
 
         items:
           $ref: ../definitions.yaml#/stream
-          
+
 post:
   tags:
     - Organization
@@ -37,6 +37,6 @@ post:
       description: Organization not found
 
 parameters:
-  - $ref: ../parameters.yaml#/organizationId
+  - $ref: ../parameters.yaml#/organization_id
 
   - $ref: ../parameters.yaml#/jwt

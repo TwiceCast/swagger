@@ -37,8 +37,8 @@ delete:
   responses:
     200:
       description: Done
-      
+
 parameters:
-  - $ref: ../parameters.yaml#/tagId
+  - $ref: ../parameters.yaml#/tag_id
 
   - $ref: ../parameters.yaml#/jwt

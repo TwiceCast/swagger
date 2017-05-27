@@ -1,17 +1,8 @@
 avatar:
   $ref: parameters/avatar.yaml
 
-userId:
-  $ref: parameters/userId.yaml
-
-streamId:
-  $ref: parameters/streamId.yaml
-
-replayId:
-  $ref: parameters/replayId.yaml
-
-organizationId:
-  $ref: parameters/organizationId.yaml
+user_id:
+  $ref: parameters/user_id.yaml
 
 user:
   $ref: parameters/user.yaml
@@ -19,26 +10,36 @@ user:
 user_create:
   $ref: parameters/user_create.yaml
 
+
 stream:
   $ref: parameters/stream.yaml
+
+stream_id:
+  $ref: parameters/stream_id.yaml
+
 
 organization:
   $ref: parameters/organization.yaml
 
-limit:
-  $ref: parameters/limit.yaml
+organization_id:
+  $ref: parameters/organization_id.yaml
 
-country:
-  $ref: parameters/country.yaml
 
 start:
   $ref: parameters/start.yaml
 
+limit:
+  $ref: parameters/limit.yaml
+
+
+country:
+  $ref: parameters/country.yaml
+
 tag:
   $ref: parameters/tag.yaml
 
-tagId:
-  $ref: parameters/tagId.yaml
+tag_id:
+  $ref: parameters/tag_id.yaml
 
 login:
   $ref: parameters/login.yaml

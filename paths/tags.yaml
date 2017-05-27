@@ -37,6 +37,6 @@ post:
 
       schema:
         $ref: ../definitions.yaml#/tag
-        
+
   parameters:
     - $ref: ../parameters.yaml#/tag

@@ -39,6 +39,6 @@ delete:
       description: done
 
 parameters:
-  - $ref: ../parameters.yaml#/organizationId
-  
+  - $ref: ../parameters.yaml#/organization_id
+
   - $ref: ../parameters.yaml#/jwt

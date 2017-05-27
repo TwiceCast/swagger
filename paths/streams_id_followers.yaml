@@ -35,6 +35,6 @@ put:
       description: Stream followed.
 
 parameters:
-  - $ref: ../parameters.yaml#/streamId
+  - $ref: ../parameters.yaml#/stream_id
 
   - $ref: ../parameters.yaml#/jwt

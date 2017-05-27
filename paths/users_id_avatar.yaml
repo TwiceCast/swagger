@@ -43,4 +43,4 @@ put:
       description: The user has not been found.
 
 parameters:
-  - $ref: ../parameters.yaml#/userId
+  - $ref: ../parameters.yaml#/user_id
