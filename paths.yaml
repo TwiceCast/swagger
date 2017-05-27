@@ -81,21 +81,6 @@
 /organizations/{organizationId}/members:
   $ref: paths/organizations_id_members.yaml
 
-# /replays:
-#   $ref: paths/replays.yaml
-#
-# /replays/{replayId}:
-#   $ref: paths/replays_id.yaml
-#
-# /replays/{replayId}/chat:
-#   $ref: paths/replays_id_chat.yaml
-#
-# /replays/{replayId}/event:
-#   $ref: paths/replays_id_event.yaml
-#
-# /replays/{replayId}/repository:
-#   $ref: paths/replays_id_repository.yaml
-
 /tags:
   $ref: paths/tags.yaml
 

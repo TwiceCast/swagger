@@ -7,11 +7,14 @@ user:
 user_not_found:
   $ref: responses/user_not_found.yaml
 
+stream_list:
+  $ref: responses/stream_list.yaml
+
 organization:
   $ref: responses/organization.yaml
 
-stream_list:
-  $ref: responses/stream_list.yaml
+organization_list:
+  $ref: responses/organization_list.yaml
 
 option:
   $ref: responses/option.yaml

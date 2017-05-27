@@ -2,7 +2,7 @@ get:
   tags:
     - User
 
-  description: todo
+  description: This give you the list of all your subscribes subscribes.
 
   parameters:
     - $ref: ../parameters.yaml#/start

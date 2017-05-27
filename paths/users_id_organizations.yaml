@@ -1,20 +1,34 @@
 get:
   tags:
-    - Organization
-  description: Return all organization
-  responses:
-    200:
-      description: array of organizations
-      schema:
-        type: array
-        items:
-          $ref: ../definitions.yaml#/organization
-post:
-  tags:
     - User
-  description: Create a organization
+
+  description: This give you the list of all your organization.
+
+  parameters:
+    - $ref: ../parameters.yaml#/start
+
+    - $ref: ../parameters.yaml#/limit
+
   responses:
     200:
-      $ref: ../responses.yaml#/organization
+      $ref: ../responses.yaml#/organization_list
+
+    204:
+      description: This will be send if there are no other data.
+
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    401:
+      $ref: ../responses.yaml#/unauthorized
+
+    403:
+      $ref: ../responses.yaml#/forbidden
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
+
 parameters:
   - $ref: ../parameters.yaml#/userId
+
+  - $ref: ../parameters.yaml#/jwt
