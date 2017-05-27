@@ -1,14 +1,14 @@
-avatar:
-  $ref: parameters/avatar.yaml
-
-user_id:
-  $ref: parameters/user_id.yaml
-
 user:
   $ref: parameters/user.yaml
 
 user_create:
   $ref: parameters/user_create.yaml
+
+user_id:
+  $ref: parameters/user_id.yaml
+
+avatar:
+  $ref: parameters/avatar.yaml
 
 
 stream:
@@ -32,17 +32,16 @@ limit:
   $ref: parameters/limit.yaml
 
 
-country:
-  $ref: parameters/country.yaml
-
 tag:
   $ref: parameters/tag.yaml
 
 tag_id:
   $ref: parameters/tag_id.yaml
 
+
 login:
   $ref: parameters/login.yaml
+
 
 jwt:
   $ref: parameters/jwt.yaml

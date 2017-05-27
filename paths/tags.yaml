@@ -4,6 +4,11 @@ get:
 
   description: Return all categories
 
+  parameters:
+    - $ref: ../parameters.yaml#/limit
+
+    - $ref: ../parameters.yaml#/start
+
   responses:
     200:
       description: A list of categories
@@ -19,11 +24,6 @@ get:
 
       schema:
         $ref: ../definitions.yaml#/error
-
-  parameters:
-    - $ref: ../parameters.yaml#/limit
-
-    - $ref: ../parameters.yaml#/start
 
 post:
   tags:

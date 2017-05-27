@@ -6,5 +6,5 @@ properties:
 
   password:
     type: string
-    
+
     description: The clear password of the user, he will be hash by the server (SHA256).

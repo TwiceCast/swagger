@@ -7,11 +7,9 @@ organization:
 user:
   $ref: definitions/user.yaml
 
-user_public:
-  $ref: definitions/user_public.yaml
-
 user_create:
   $ref: definitions/user_create.yaml
+
 
 server:
   $ref: definitions/server.yaml

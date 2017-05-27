@@ -10,18 +10,10 @@ get:
     - $ref: ../parameters.yaml#/limit
 
     - $ref: ../parameters.yaml#/jwt
-    
+
   responses:
     200:
-      description: >
-        This will contain the users list, this result will be split.
-        You need to call this route by increment start until you get a 204.
-
-      schema:
-        type: array
-
-        items:
-          $ref: ../definitions.yaml#/user_public
+      $ref: ../responses.yaml#/user_list
 
     204:
       description: This will be send if there are no other data.
@@ -35,10 +27,7 @@ post:
 
   responses:
     200:
-      description: the new user create
-
-      schema:
-        $ref: ../definitions.yaml#/user
+      $ref: ../responses.yaml#/user
 
   parameters:
     - $ref: ../parameters.yaml#/user_create

@@ -9,10 +9,13 @@ get:
 
   responses:
     200:
-      description: todo
+      $ref: ../responses.yaml#/avatar
 
-      schema:
-        type: file
+    400:
+      $ref: ../responses.yaml#/bad_request
+
+    404:
+      $ref: ../responses.yaml#/user_not_found
 
 put:
   tags:
@@ -31,16 +34,21 @@ put:
       description: The avatar has been replaced.
 
     400:
-      description: You image is not acceptable, you can find why in the body response.
+      $ref: ../responses.yaml#/bad_request
 
     402:
-      description: When your jwt is not valid or you didn't give it. Detail in the body response.
+      description: >
+        When your jwt is not valid or you didn't give it.
+        Detail in the body response.
 
     403:
       description: You don't have the right to modify this avatar.
 
     404:
-      description: The user has not been found.
+      $ref: ../responses.yaml#/user_not_found
+
+    415:
+      description: We only support png.
 
 parameters:
   - $ref: ../parameters.yaml#/user_id

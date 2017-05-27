@@ -1,8 +1,8 @@
 description: >
-  This will contain your streams, this result will be split.
+  This will contain your organisations, this result will be split.
   You need to call this route by increment start until you get a 204.
 
 schema:
   type: array
-  
-  $ref: ../definitions.yaml#/stream
+
+  $ref: ../definitions.yaml#/user

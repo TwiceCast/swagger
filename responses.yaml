@@ -1,8 +1,14 @@
+avatar:
+  $ref: responses/avatar.yaml
+
 stream:
   $ref: responses/stream.yaml
 
 user:
   $ref: responses/user.yaml
+
+user_list:
+  $ref: responses/user_list.yaml
 
 user_not_found:
   $ref: responses/user_not_found.yaml

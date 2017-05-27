@@ -9,8 +9,8 @@
       200:
        $ref: responses.yaml#/option
 
-/user/login:
-  $ref: paths/user_login.yaml
+/login:
+  $ref: paths/login.yaml
 
 /users:
   $ref: paths/users.yaml
