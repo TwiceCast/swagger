@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/login
+
+description: This represent the information needed when you want login.

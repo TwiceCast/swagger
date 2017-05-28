@@ -1,9 +1,9 @@
 put:
   tags:
     - User
-    - Block
+    - Follow
 
-  description: Create a block
+  description: Create a follow
 
   responses:
     201:
@@ -24,13 +24,13 @@ put:
 delete:
   tags:
     - User
-    - block
+    - follow
 
-  description: Delete a block
+  description: Delete a follow
 
   responses:
     204:
-      description: This block has been remove successfully.
+      description: This follow has been remove successfully.
 
     400:
       $ref: ../responses.yaml#/bad_request
@@ -47,6 +47,6 @@ delete:
 parameters:
   - $ref: ../parameters.yaml#/user_id
 
-  - $ref: ../parameters.yaml#/block_id
+  - $ref: ../parameters.yaml#/follow_id
 
   - $ref: ../parameters.yaml#/jwt

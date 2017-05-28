@@ -5,3 +5,5 @@ in: path
 required: true
 
 type: integer
+
+description: This ID is provided by the API, it's used to indentified an unique organization.

@@ -5,3 +5,6 @@ in: header
 type: string
 
 required: false
+
+description: >
+  This API is JWT, you must add it to every request if possible.

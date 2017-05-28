@@ -2,7 +2,10 @@ name: start
 
 in: query
 
-description: Offset the results
+description: >
+  Offset the results, for exemple if start is set to 5.
+  Your result will not contains the first 5 results.
+  It's begin by 0.
 
 type: integer
 

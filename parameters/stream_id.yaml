@@ -5,3 +5,5 @@ in: path
 required: true
 
 type: integer
+
+description: This id is provide by the API to indentified a stream.

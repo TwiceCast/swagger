@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/organization
+
+description: This represent an organization.

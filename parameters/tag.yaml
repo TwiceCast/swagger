@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/tag
+
+description: This represent a tag.

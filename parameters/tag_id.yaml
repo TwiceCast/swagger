@@ -5,3 +5,5 @@ in: path
 required: true
 
 type: integer
+
+description: This id is provided by the API, it's used to indentified a unique tag.

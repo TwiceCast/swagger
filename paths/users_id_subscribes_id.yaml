@@ -1,7 +1,7 @@
 put:
   tags:
     - User
-    - subscribe
+    - Subscribe
 
   description: Create a subscribe
 

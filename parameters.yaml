@@ -16,6 +16,9 @@ friend_id:
 subscribe_id:
   $ref: parameters/subscribe_id.yaml
 
+follow_id:
+  $ref: parameters/follow_id.yaml
+
 avatar:
   $ref: parameters/avatar.yaml
 

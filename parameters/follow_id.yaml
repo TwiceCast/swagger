@@ -1,0 +1,9 @@
+name: follow_id
+
+in: path
+
+required: true
+
+type: integer
+
+description: This represent a stream id.

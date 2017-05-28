@@ -5,3 +5,7 @@ in: formData
 required: true
 
 type: file
+
+description: >
+  Avatar is an image, if possible we want a png image.
+  With a scare as ratio.

@@ -39,6 +39,9 @@
 /users/{user_id}/follows:
   $ref: paths/users_id_follows.yaml
 
+/users/{user_id}/follows/{follow_id}:
+  $ref: paths/users_id_follows_id.yaml
+
 /users/{user_id}/subscribes:
   $ref: paths/users_id_subscribes.yaml
 

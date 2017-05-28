@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/user
+
+description: This represent an user.

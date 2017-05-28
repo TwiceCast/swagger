@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/register
+
+description: This is the information that the API remember about an user.

@@ -5,3 +5,5 @@ in: path
 required: true
 
 type: integer
+
+description: This represent a stream ID.

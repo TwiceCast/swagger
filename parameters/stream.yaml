@@ -6,3 +6,5 @@ required: true
 
 schema:
   $ref: ../definitions.yaml#/stream
+
+description: This represent a stream.

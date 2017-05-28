@@ -2,8 +2,14 @@ name: limit
 
 in: query
 
-description: Limit the number of result
+description: >
+  Limit the number of result, used with start.
+  Limit permit to set the number of result that the API must send you.
 
 type: integer
+
+minimum: 0
+
+maximum: 100
 
 required: false
