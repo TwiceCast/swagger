@@ -24,7 +24,7 @@ put:
 delete:
   tags:
     - User
-    - block
+    - Block
 
   description: Delete a block
 

@@ -24,7 +24,7 @@ put:
 delete:
   tags:
     - User
-    - follow
+    - Follow
 
   description: Delete a follow
 

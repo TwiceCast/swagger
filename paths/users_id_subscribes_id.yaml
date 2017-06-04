@@ -24,7 +24,7 @@ put:
 delete:
   tags:
     - User
-    - subscribe
+    - Subscribe
 
   description: Delete a subscribe
 

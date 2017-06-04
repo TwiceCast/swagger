@@ -15,7 +15,4 @@ post:
           $ref: ../definitions.yaml#/jwt
 
     404:
-      description: not found
-
-      schema:
-        $ref: ../definitions.yaml#/error
+      $ref: ../responses.yaml#/not_found
