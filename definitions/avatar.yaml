@@ -1,0 +1,12 @@
+properties:
+  format:
+    type: string
+
+    description: png, jpeg, etc...
+
+  data:
+    type: string
+
+    format: base64
+
+    description: This is the data of the image encoded in base64.
