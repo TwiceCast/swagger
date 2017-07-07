@@ -1,12 +1,5 @@
-properties:
-  format:
-    type: string
+type: string
 
-    description: png, jpeg, etc...
+format: binary
 
-  data:
-    type: string
-
-    format: base64
-
-    description: This is the data of the image encoded in base64.
+description: This is the data of the image.

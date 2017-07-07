@@ -4,6 +4,11 @@ get:
 
   description: Return avatar
 
+  produces:
+    - image/png
+    - image/jpeg
+    - image/gif
+
   responses:
     200:
       $ref: ../responses.yaml#/avatar
@@ -25,6 +30,11 @@ put:
     - User
 
   description: Replace avatar
+
+  consumes:
+    - image/png
+    - image/jpeg
+    - image/gif
 
   parameters:
     - $ref: ../parameters.yaml#/avatar

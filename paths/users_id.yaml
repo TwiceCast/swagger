@@ -75,7 +75,7 @@ delete:
 
   responses:
     204:
-      description: The user has been remove successfully.
+      description: The user has been removed successfully.
 
     400:
       $ref: ../responses.yaml#/bad_request
