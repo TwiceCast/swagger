@@ -2,9 +2,6 @@ get:
   tags:
     - User
 
-  produces:
-    - image/png
-
   description: Return avatar
 
   responses:
@@ -26,9 +23,6 @@ get:
 put:
   tags:
     - User
-
-  consumes:
-    - multipart/form-data
 
   description: Replace avatar
 

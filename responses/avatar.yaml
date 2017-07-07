@@ -1,4 +1,4 @@
 description: The avatar image.
 
 schema:
-  type: file
+  $ref: ../definitions.yaml#/avatar

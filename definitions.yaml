@@ -26,6 +26,9 @@ error:
 tag:
   $ref: definitions/tag.yaml
 
+avatar:
+  $ref: definitions/avatar.yaml
+
 
 register:
   $ref: definitions/register.yaml

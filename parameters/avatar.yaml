@@ -1,10 +1,11 @@
 name: avatar
 
-in: formData
+in: body
 
 required: true
 
-type: file
+schema:
+  $ref: ../definitions.yaml#/avatar
 
 description: >
   Avatar is an image, if possible we want a png image.
