@@ -16,6 +16,22 @@ get:
     404:
       $ref: ../responses.yaml#/not_found
 
+post:
+  tags:
+    - Stream
+
+  description: This route permit to add a tag to a stream. Require to be stream's founder.
+
+  parameters:
+    - $ref: ../parameters.yaml#/tag
+
+  responses:
+    200:
+      $ref: ../responses.yaml#/tag
+
+    404:
+      $ref: ../responses.yaml#/not_found
+
 parameters:
   - $ref: ../parameters.yaml#/stream_id
 
