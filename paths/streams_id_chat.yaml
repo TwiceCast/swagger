@@ -10,7 +10,9 @@ get:
     200:
       description: >
         This will contain the jwt that allow you to connect into the
-        chat address give by the API
+        chat address give by the API. The JWT token contain an array of rights   "rights": ["id","id"]
+        matching the following values:
+        8:'Founder', 9:'Co-Streamer', 10:'Moderator', 11,:'Contributor', 12:'Guest'
 
       schema:
         $ref: ../definitions.yaml#/chat
